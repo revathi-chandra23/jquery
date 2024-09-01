@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<style>
+    #show
+    {
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <h1> revathi</h1>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+
+</body>
+</html>
+<script>
+       $('#hide').click(function(){
+        $('h1').hide(1000,function()
+        {
+            alert("h1 is hide");
+        })
+       })
+       $('#show').click(function(){
+        $('h1').show(1000);
+       })
+ 
+</script>
